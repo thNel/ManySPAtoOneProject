@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "useDefineForClassFields": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "strict": true,
+    "noImplicitThis": true,
+    "jsx": "preserve",
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "lib": ["esnext", "dom"],
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@shared/*": ["./shared/*"],
+      "@/*": [
+        "./apps/App1/src/*",
+        "./apps/App2/src/*",
+        "./apps/App3/src/*"
+      ],
+      "tslib": ["node_modules/tslib/tslib.d.ts"]
+    }
+  },
+  "include": [
+    "shims/*.d.ts",
+    "apps/shared/**/*.ts",
+    "apps/shared/**/*.d.ts",
+    "apps/shared/**/*.tsx",
+    "apps/shared/**/*.vue",
+    "apps/**/src/**/*.ts",
+    "apps/**/src/**/*.d.ts",
+    "apps/**/src/**/*.tsx",
+    "apps/**/src/**/*.vue"
+  ],
+  "exclude": ["node_modules"]
+}

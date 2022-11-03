@@ -1,0 +1,27 @@
+{
+  "root": true,
+  "env": {
+    "node": true
+  },
+
+  "extends": [
+    "plugin:vue/vue3-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "eslint:recommended",
+    "@vue/typescript/recommended",
+    "@vue/prettier",
+    "@vue/eslint-config-typescript/recommended"
+  ],
+  "parserOptions": {
+    "parser": "@typescript-eslint/parser"
+  },
+  "rules": {
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-unused-vars": "off",
+    "no-console": "warn",
+    "no-debugger": "error",
+    "no-irregular-whitespace": "warn"
+  },
+  "plugins": ["vue", "@typescript-eslint"]
+}
